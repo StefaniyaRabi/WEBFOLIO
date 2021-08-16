@@ -99,8 +99,6 @@ body{
     padding: 15px;
 }
 
-.gallery img::after
-
 /* .about-author{
     display: flex;
     color: #fff;
@@ -195,7 +193,7 @@ body{
 .about-author{
     display: flex;
     color: #fff;
-    margin: 0 40px;
+    margin: 0 40px 0 50px;
 }
 
 .author__main-info{
@@ -207,29 +205,85 @@ body{
     display: flex;
 }
 
+.author__photo{
+    border: 8px #fff solid;   
+    /* transform: translate(0, -42%); */
+    margin: -51px 0 30px 0;
+}
+
 .div{
     display: flex;
     flex-direction: column;
     padding-left: 25px;
 }
 
+.author__name{
+    font-family: 'Cambria', sans-serif;
+    font-size: 24.5px;
+    font-style: italic;
+    padding: 22px 0 9px 0;
+}
+
 .city{
     display: flex;
+    /* align-items: center; */
+}
+
+.city-text{
+    font-family: 'PT Sans', PT Sans;
+    font-size: 12.5px;
+    padding-left: 10px;
 }
 
 .social-icons{
+    display: flex;
+    align-items: center;
+}
 
+.social-icons__img{
+    padding-right: 23px;
 }
 
 .author__text{
     max-width: 592px;
+    font-family: 'PT Sans', PT Sans;
+    font-size: 12.5px;
+    line-height: 1.6;
+    margin-top: -5px;
+    padding-bottom: 40px;
 }
 
 .skills{
-    padding-left: 72px;
+    padding: 61px 0 59px 72px;
 }
 
+.skills__title{
+    font-family: 'Cambria', sans-serif;
+    font-size: 24.5px;
+    padding-bottom: 25px;
+}
 
+.skills__div{}
+
+.skills__item{
+    display: flex;
+    align-items: center;
+    font-family: 'PT Sans', PT Sans;
+}
+
+.skills__item p{
+    font-size: 18.5px;
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+
+.padding3{
+    padding: 3px;
+}
+
+.skills__item img{
+    /* padding-left: 10px; */
+}
 
 footer{
     font-size: 12.5px;
