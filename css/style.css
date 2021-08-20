@@ -385,3 +385,60 @@ footer{
         height: 12px;
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(247, 250, 236);
+    }
+
+    .gallery__item{
+        width: 240px;
+        height: 240px;
+    }
+
+    .author__photo{
+        width: 100px;
+        height: 100px;
+        border: 6px #fff solid;   
+        margin: -35px 0 30px 0;
+    }
+
+    .author__name{
+        font-size: 18.5px;
+        font-style: italic;
+        padding: 18px 0 6px 0;
+    }
+
+    .city-text{
+        font-size: 12.5px;
+        padding-left: 10px;
+    }
+
+    .social-icons__img-twitter{
+        width: 26px;
+        height: 28px;
+        margin-top: -10px;
+    }
+
+    .social-icons__img-dribbble{
+        width: 28px;
+        height: 28px;
+        margin-top: -10px;
+    }
+
+    .author__text{
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: -5px;
+        padding-bottom: 0;
+    }
+
+    .skills{
+        padding: 35px 0 59px 0;
+    }
+
+    .skills__title{
+        font-size: 21.5px;
+        padding-bottom: 16px;
+    }
+}
