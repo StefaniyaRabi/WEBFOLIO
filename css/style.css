@@ -58,7 +58,7 @@ body{
 }
 
 .header__img{
-    padding-top: 75px;
+    padding-top: 45px;
 }
 .header__text{
     font-size: 22px;
@@ -74,18 +74,19 @@ body{
 }
 
 .header__title_img{
-    background-image: url(../img/bg.png);
-    background-position: center center; 
-    background-repeat: no-repeat;
+    background: url('../img/bg.png')  0 0/100% 100% no-repeat;
+    /* background-size: cover; */
+    /* background-position: center center;  */
+    /* background-repeat: no-repeat; */
     width: 100%;
-    height: 276px;
+    max-height: 276px;
 }
 
 .portfolio__title{
     font-size: 22.5px;
     font-style: italic;
     font-family: 'Cambria', sans-serif;
-    padding: 0 0 35px 50px;
+    padding: 50px 0 35px 50px;
     /* margin-top: 82px; */
 }
 .gallery{
@@ -210,9 +211,11 @@ body{
 
 .div_div{
     display: flex;
+    /* position: relative; */
 }
 
 .author__photo{
+    /* position: absolute; */
     width: 124px;
     height: 124px;
     border: 8px #fff solid;   
@@ -326,6 +329,9 @@ footer{
         background-color: rgb(248, 217, 175);
     }
 
+    .portfolio__title{
+        text-align: center;
+    }
     .gallery {
         margin-left: 5px;
         margin-right: 5px;
@@ -391,9 +397,19 @@ footer{
         background-color: rgb(247, 250, 236);
     }
 
+    .header__menu {
+        display: none;
+    }
+
     .gallery__item{
         width: 240px;
         height: 240px;
+    }
+
+    .portfolio__title{
+        font-size: 19px;
+        padding: 40px 0 20px 0;
+        text-align: center;
     }
 
     .author__photo{
@@ -448,20 +464,120 @@ footer{
         background-color: rgb(233, 233, 222);
     }
 
+    .logo__title{
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    .logo__text{
+        font-size: 12px;
+        margin-top: -5px;
+    }
+
+    .header__img {
+        padding-top: 20px;
+    }
+
+    .header__img img{
+        width: 6%;
+        height: 6%;
+    }
+
+    .header__title_img{
+        background: none;
+        height: 170px;
+    }
+
+    .header__text{
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 23px 70px 25px;
+        /* hyphens: auto; */
+        margin: 0 auto;
+        max-width: 420px;
+        /* border-bottom: 1px solid rgba(154, 147, 140, 0.5); */
+        box-shadow: 0 5px 5px -5px rgba(154, 147, 140, 0.5);
+    }
+    .portfolio__title{
+        font-size: 19px;
+        padding: 20px 0 10px 0;
+        margin-bottom: -10px;
+        text-align: center;
+        /* margin-top: 82px; */
+    }
+    .gallery{
+        padding-bottom: 50px;
+    }
+
     .gallery__item{
-        width: 100%;
+        width: 60%;
         height: 100%;
         margin: 5% 10%;
         /* margin: 30px; */
     }
+
+    .author__main-info{
+        margin-top: 10px;
+    }
     
     .about-author{
-        width: 85%;
+        max-width: 95%;
+        margin: 0 10px 0 20px;
+    }
+
+    .div{
+        display: flex;
+        padding-left: 15px;
+        width: 100px;
+        
+    }
+
+    /* .div_div{
+        width: 80%;
+    } */
+
+    .author__photo{
+        width: 40%;
+        height: 70%;
+        /* max-width: 100px;
+        max-height: 100px; */
+        margin: 10px 0 10px 0;
+        transform: translateY(-55%);
+    }
+
+    .author__name{
+        font-size: 16.5px;
+        padding: 0 0 2px 0;
+    }
+
+    .city-img img{
+        width: 10px;
+    }
+
+    .city-text{
+        font-size: 10.5px;
+        padding-left: 8px;
+    }
+
+    .author__text{
+        max-width: 592px;
+        font-size: 12.5px;
+        line-height: 1.6;
+        margin-top: -55px;
+        padding-bottom: 0;
     }
 
     .social-icons{
         display: flex;
-        
+        justify-content: flex-end;
+        align-items: flex-start;
+        max-width: 90px;
+        min-width: 50px;
+        transform: translateY(5%);
+    }
+
+    .social-icons__img{
+        padding-right: 0;
+        margin-right: 10px;
     }
 
     .social-icons__img-twitter{
@@ -469,13 +585,18 @@ footer{
         height: 28px; */
         width: 20%;
         height: 20%;
-        /* margin-top: -10px; */
+        padding-right: 0;
+        margin-top: 0;
     }
 
     .social-icons__img-dribbble{
         width: 20%;
         height: 20%;
-        /* margin-top: -10px; */
+        margin-top: 0;
+    }
+
+    .skills{
+        padding: 30px 0 45px 0;
     }
     
     .skills__item p{
